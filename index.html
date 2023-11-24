@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="chester.png" sizes="16x16">
+  <title>Atletas Botafogo - Login</title>
+  <link rel="stylesheet" href="senha.css">
+  <script src="md5.min.js"></script>
+  <script src="autenticacao.js" defer></script>
+</head>
+<body>
+  <div class="container">
+  <header>
+    <img id="escudo" src="escudo.png" alt="escudo">
+  </header>
+  <main>
+    <p>Digite a senha para acessar os dados</p>
+    <form id="formularioAutenticacao">
+      <input type="password" id="senha" name="senha" placeholder="Senha" required>
+      <button type="button" onclick="mostrarSenha()">Mostrar Senha</button>
+      <br>
+      <button type="button" onclick="verificarSenha()">LOGIN</button>
+    </form>
+    <p>A senha é botafogo</p>
+    <p id="mensagemErro" style="color: red;"></p>
+  </main>
+  </div>
+
+  <script>
+    function mostrarSenha() {
+      const senhaInput = document.getElementById('senha');
+      if (senhaInput.type === 'password') {
+        senhaInput.type = 'text';
+      } else {
+        senhaInput.type = 'password';
+      }
+    }
+  </script>
+</body>
+</html>

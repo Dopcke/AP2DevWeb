@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0; 
+    background-image: url('fundo.jpg'); 
+    background-size: cover; 
+    background-position: center;
+}
+
+.container {
+    width: 30%; 
+    height: 70vh; 
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white; 
+    padding: 20px; 
+    border: 2px solid #626262; 
+    border-radius: 30px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+}
+
+#escudo {
+    max-width: 30%;
+}
+
+#formularioAutenticacao {
+    margin-top: 20px;
+}
+
+p {
+    font-size: 20px;
+    display: flow;
+}
+
+button {
+    height: 50px;
+    width: 80px;
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+#mensagemErro {
+    margin-top: 10px;
+}
